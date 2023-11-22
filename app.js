@@ -12,16 +12,21 @@
 //npm init (step by step, eneter value for each property on console)
 //npm init -y (defaults every property)
 
-//following command installs all dependencies from the package.json file
+
 //npm install
+//this command installs all dependencies from the package.json file
 //this is useful when share code, as node_modules will not be pushed to the remote repo
 //and user will have to insall the depencies by running npm install
 
+//npm install <packagename> -D
+// to install dev dependecies - dependecies which we may not want in production
+// e.g. formatting, code lint, etc
+
 const _ = require('lodash');
 
-const items = [1,[2,[3,[4]]]];
-console.log(items);
+const items = [1,9,3,2,[2,[3,[4]]]];
 
 const newItems = _.flattenDeep(items);
 
-console.log(newItems);
+console.log(newItems[1]);
+console.log("hy");
