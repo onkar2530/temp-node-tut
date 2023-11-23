@@ -29,4 +29,4 @@ const items = [1,9,3,2,[2,[3,[4]]]];
 const newItems = _.flattenDeep(items);
 
 console.log(newItems[1]);
-console.log("hyw");
+console.log("hye");
