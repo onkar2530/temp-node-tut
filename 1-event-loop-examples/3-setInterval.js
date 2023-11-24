@@ -1,7 +1,4 @@
 //keeps running the call back after the specified intervals
-
-const { forEach } = require("lodash");
-
 //until interrupted or some error
 setInterval(() => {
     console.log("I am in interval");
