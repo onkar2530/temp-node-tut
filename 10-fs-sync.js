@@ -4,6 +4,8 @@
 //above is same as below, destructure right away
 const {readFileSync, writeFileSync} = require('fs');
 console.log('start');
+// if the file is too big, eventually const will not be able to
+// hold all the data. Use streams in that case, to read chunk by chunk
 const first = readFileSync('./content/first.txt', 'utf8');
 const second = readFileSync('./content/second.txt', 'utf8');
 
