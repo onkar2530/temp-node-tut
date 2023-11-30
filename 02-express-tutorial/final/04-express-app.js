@@ -7,6 +7,9 @@ app.use(express.static('./public'));
 
 app.get('/', (req, res)=>{
     res.status(200).sendFile(path.join(__dirname, './navbar-app/index.html'));
+    // other 2 options are
+    // adding index.html as static resource in public folder
+    // 2nd is SSR - server side rendering
 });
 
 app.get('/about', (req, res)=>{
